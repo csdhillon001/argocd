@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: nginx
+    env: poc
   name: nginx
 spec:
   replicas: 1
