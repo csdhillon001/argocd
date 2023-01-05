@@ -13,6 +13,6 @@ spec:
     targetPort: 80
   selector:
     app: dep1
-  type: clusteip
+  type: clusterip
 status:
   loadBalancer: {}
