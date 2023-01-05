@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     app: dep1
-  name: dep1
+  name: dep1-svc
   namespace: ns-arg01
 spec:
   ports:
