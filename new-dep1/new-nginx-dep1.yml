@@ -1,0 +1,28 @@
+
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: dep1
+  name: new-nginx-dep1
+ # namespace: ns-arg01
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dep1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: dep1
+    spec:
+      containers:
+      - image: nginx
+        name: dep1-container
+        ports:
+        - containerPort: 80
+        res
