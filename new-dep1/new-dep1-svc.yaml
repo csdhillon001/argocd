@@ -1,1 +1,18 @@
-https://github.com/csdhillon001/argocd/blob/master/dep1/dep1-svc.yml
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: dep1
+  name: new-dep1-svc
+  namespace: default
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: dep1
+  type: ClusterIP
+status:
+  loadBalancer: {}
