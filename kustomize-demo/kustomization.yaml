@@ -6,5 +6,6 @@ namePrefix: kustomize-
 resources:
 - nginx-deployment.yaml
 - nginx-svc.yaml
-- sc01.yml
-- cm01.yml
+- sc01.yaml
+- cm01.yaml
+- cm10.yaml
