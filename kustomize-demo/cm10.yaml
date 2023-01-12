@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  fname: singh
+  lname: dhillon
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: cm10
